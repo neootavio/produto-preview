@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    background: yellow;
+    display: flex;
+    flex-direction: row; /*eixo principal*/
+    justify-content: flex-start; /*eixo principal*/
+    align-items: baseline; /*eixo transversal*/
+   /* flex-wrap: wrap;*/
+    align-content: space-around;
+    flex-flow: row wrap;
+
+    gap: 30px;
+    height: 50vh;
+}
+
+.flex-item{
+    background-color: pink;
+}
+
+.flex-item:nth-child(1){
+    height: 200px;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item:last-child{
+    flex-basis: 100%;
+}
