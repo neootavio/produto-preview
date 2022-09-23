@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
+@font-face {
+    font-family: 'fonte1';
+    src: url('fonts/pt-serif/PTF75F.ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fonte2';
+    src: url('fonts/RoundFit/roundfit\ lowercase\ extended.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'fonte3';
+    src: url('fonts/Triomphe-FontZillion/Fonts/triomphe-regular-autoinstr.ttf');
+}
+
+@font-face {
+    font-family: 'fonte4';
+    src: url('fonts/badguy/bad\ guy\ black.ttf');
+    font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +47,7 @@
 .flex-container {
     background: yellow;
     display: flex;
-    position: relative;
+    position: absolute;
     flex-direction: row;
     justify-content: flex-start;
     gap: 30px;
@@ -32,6 +56,8 @@
     border-radius: 20px;
     text-align: center;
     margin: auto;
+    top: 25%;
+    left: 25%;
 }
 
 .flex-item {
@@ -48,7 +74,7 @@
     width: 200px;
     height: 40px;
     border: none;
-    margin-top: 30px;
+    margin-top: 100px;
     font-weight: bold;
 }
 
@@ -62,26 +88,31 @@
     color: darkslategray;
     font-size: x-large;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'fonte4';
+    margin-top: 90px;
 }
 
 .normal-price {
     color: black;
     text-decoration: line-through;
+    margin-top: 90px;
     margin-left: 20px;
 }
 
 h1 {
     text-align: left;
     font-weight: lighter;
-    font-family: 'Square Peg';
+    font-family: 'fonte1';
     font-size: x-large;
 }
 
 h2 {
     text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'fonte1';
     margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
 }
 
 article {
@@ -89,6 +120,7 @@ article {
     margin-bottom: 15px;
     text-align: left;
     width: 15vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .foto-produto {
