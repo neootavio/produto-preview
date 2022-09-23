@@ -1,37 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Roboto&display=swap');
 
-@font-face {
-    font-family: 'fonte1';
-    src: url('fonts/pt-serif/PTF75F.ttf');
-    font-weight: bolder;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'fonte2';
-    src: url('fonts/RoundFit/roundfit\ lowercase\ extended.ttf');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'fonte3';
-    src: url('fonts/Triomphe-FontZillion/Fonts/triomphe-regular-autoinstr.ttf');
-}
-
-@font-face {
-    font-family: 'fonte4';
-    src: url('fonts/badguy/bad\ guy\ black.ttf');
-    font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
 }
 
+body{
+    background-color: rgba(209, 200, 188, 0.841);
+}
 
 
 .attribution {
@@ -45,7 +26,7 @@
 
 
 .flex-container {
-    background: yellow;
+    background: white;
     display: flex;
     position: absolute;
     flex-direction: row;
@@ -53,17 +34,11 @@
     gap: 30px;
     width: 500px;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     margin: auto;
     top: 25%;
     left: 25%;
-}
-
-.flex-item {
-    background-color: pink;
-    width: 50%;
-    height: 100%;
 }
 
 .bt-cart {
@@ -74,41 +49,56 @@
     width: 200px;
     height: 40px;
     border: none;
-    margin-top: 100px;
     font-weight: bold;
 }
 
 .txt-btn {
 
+    font-family: 'Montserrat';
     margin-left: 15px;
 
+}
+
+.btn-container{
+    position: relative;
+    top: 5%;
+    left: -8%;
 }
 
 .price-offer {
     color: darkslategray;
     font-size: x-large;
     font-weight: bold;
-    font-family: 'fonte4';
-    margin-top: 90px;
+    font-family: 'Fraunces';
+    margin-top: 10px;
+    margin-left: 0;
 }
 
 .normal-price {
     color: black;
     text-decoration: line-through;
-    margin-top: 90px;
     margin-left: 20px;
+    font-family: 'Montserrat';
+}
+
+.preco{
+    margin: 0;
+    text-align: left;
 }
 
 h1 {
     text-align: left;
     font-weight: lighter;
-    font-family: 'fonte1';
+    font-family: 'Fraunces', serif;
     font-size: x-large;
 }
 
 h2 {
     text-align: left;
-    font-family: 'fonte1';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.471);
+    margin-top: 25px;
     margin-bottom: 15px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -119,14 +109,18 @@ article {
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: left;
-    width: 15vw;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
 }
 
 .foto-produto {
-    width: 250px;
+    width: 500px;
     height: 350px;
     background-image: url("images/image-product-desktop.jpg");
     background-size: cover;
-
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 0 0 10px;    
 }
