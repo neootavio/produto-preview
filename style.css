@@ -11,7 +11,9 @@
 }
 
 body{
+    
     background-color: rgba(209, 200, 188, 0.841);
+    
 }
 
 
@@ -28,18 +30,21 @@ body{
 .flex-container {
     background: white;
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-    justify-items: center;
     gap: 30px;
-    width: 500px;
-    height: 350px;
+    width: 30vw;
+    height: 57vh;
     border-radius: 10px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     
+}
+
+.box{
+    width: 30vw;
+    height: 57vh;
 }
 
 .bt-cart {
@@ -116,12 +121,20 @@ article {
 }
 
 .foto-produto {
-    width: 500px;
-    height: 350px;
+    width: 30vw;
+    height: 57vh;
     background-image: url("images/image-product-desktop.jpg");
     background-size: cover;
     margin: auto;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px 0 0 10px;    
+}
+
+.foto{
+    width: 30vw;
+    height: 57vh;
+    margin: auto;
+    border-radius: 10px 0 0 10px;   
+
 }
