@@ -31,14 +31,15 @@ body{
     position: absolute;
     flex-direction: row;
     justify-content: flex-start;
+    align-content: center;
+    justify-items: center;
     gap: 30px;
     width: 500px;
     height: 350px;
     border-radius: 10px;
     text-align: center;
     margin: auto;
-    top: 25%;
-    left: 25%;
+    
 }
 
 .bt-cart {
